@@ -39,7 +39,7 @@ for iter = 1:iter_max
 
     % 3.选择操作(轮盘赌法)
     p_fitvalue = fitvalue / sum(fitvalue);  % 单个适应度与所有适应度之和的比
-    p_fitvalue = cumsum(p_fitvalue);        % 离散的概率值转为0~1区间,累计和
+    p_fitvalue = cumsum(p_fitvalue);        % 离散的概率值转为0~1区间,累积和
     
     p_rand = sort(rand(px,1));              % px行,1列个由小到大排序的随机数
     % 用p_rand去与做完了累计和的p_fitvalue做比较
